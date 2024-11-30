@@ -1,0 +1,8 @@
+# VS Code
+.vs/
+
+# Dependency directories
+node_modules/
+
+# Dev Directory
+test*/

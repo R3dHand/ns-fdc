@@ -1,0 +1,26 @@
+{
+  "name": "ns-fdc",
+  "version": "1.1.7",
+  "main": "fdc.js",
+  "scripts": {
+    "test": "echo test",
+    "delete": "Remove-Item -Path \"$Env:USERPROFILE\\Source\\npm-registry\\ns-fdc\\*\" -Recurse -Force",
+    "transpile": "./node_modules/.bin/babel src --out-dir dist",
+    "copy": "Copy-Item -Path \"$Env:USERPROFILE\\Source\\repos\\ns-fdc\\ns-fdc\\*\" -Destination \"$Env:USERPROFILE\\Source\\npm-registry\\ns-fdc\\\" -Recurse -Exclude @(\"node_modules\",\"src\")"
+  },
+  "keywords": [
+    "ns-fdc"
+  ],
+  "author": "R3dHand",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0"
+  },
+  "dependencies": {
+    "core-js": "^3.39.0",
+    "https": "^1.0.0"
+  }
+}
